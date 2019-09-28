@@ -20,10 +20,18 @@ then, 181 files will be generated, we can use the *compile.x* script to combine 
 ./compile.x
 ```
 
-final files are named as **rho.den\_rho, rho.den\_eng, rho.den\_esq**
+final density matrix files are named as **rho.den\_rho, rho.den\_eng, rho.den\_esq**
 
 ## H2O Simulations
 ### Sample Forcefields
+- q-TIP4P
+- mb-Pol
+- dipole-dipole interaction
+- No\_Pol
+- ...
+
+### Running script
+In the runnning script *test-h2o-local.py* we can modify different parameters we need in our simulations.
 
 
 ## CO2 Simulations
