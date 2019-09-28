@@ -1,0 +1,165 @@
+#!/bin/zsh
+#SBATCH --job-name=2H2O-P6-T170.0-R0.3-local-rot-r-tip4p-0.06
+#SBATCH --output=/work/x3lou/MMTK/H2OSimulations/LocalOE/q-TIP4P/N2-R0.3/%x-test.out
+#SBATCH --error=/work/x3lou/MMTK/H2OSimulations/LocalOE/q-TIP4P/N2-R0.3/%x-test.err
+#SBATCH --time=40-00:00
+#SBATCH --mem-per-cpu=3000mb
+
+cd "$PBS_O_WORKDIR"
+####### T = 0.37
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT0.37P8.rho H2OT0.37P8.eng H2OT0.37P8.esq 0.05 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT0.37P16.rho H2OT0.37P16.eng H2OT0.37P16.esq 0.05 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT0.37P32.rho H2OT0.37P32.eng H2OT0.37P32.esq 0.06 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT0.37P64.rho H2OT0.37P64.eng H2OT0.37P64.esq 0.08 2
+
+####### T = 1.5
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P8.rho H2OT1.5P8.eng H2OT1.5P8.esq 0.08 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P16.rho H2OT1.5P16.eng H2OT1.5P16.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P32.rho H2OT1.5P32.eng H2OT1.5P32.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P64.rho H2OT1.5P64.eng H2OT1.5P64.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P96.rho H2OT1.5P96.eng H2OT1.5P96.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P128.rho H2OT1.5P128.eng H2OT1.5P128.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P160.rho H2OT1.5P160.eng H2OT1.5P160.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P256.rho H2OT1.5P256.eng H2OT1.5P256.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P384.rho H2OT1.5P384.eng H2OT1.5P384.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P448.rho H2OT1.5P448.eng H2OT1.5P448.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P512.rho H2OT1.5P512.eng H2OT1.5P512.esq 0.1 2
+# R = 0.3 [0.06, 0.1, 0.15, 0.2, 0.15]
+# R = 0.35 [0.06, 0.1, 0.15, 0.2, 0.2, 0.15, 0.15, 0.15, 0.15]
+
+####### T = 2.5
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P8.rho H2OT2.5P8.eng H2OT2.5P8.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P16.rho H2OT2.5P16.eng H2OT2.5P16.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P32.rho H2OT2.5P32.eng H2OT2.5P32.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P64.rho H2OT2.5P64.eng H2OT2.5P64.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P75.rho H2OT2.5P75.eng H2OT2.5P75.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P96.rho H2OT2.5P96.eng H2OT2.5P96.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P128.rho H2OT2.5P128.eng H2OT2.5P128.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P160.rho H2OT2.5P160.eng H2OT2.5P160.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P256.rho H2OT2.5P256.eng H2OT2.5P256.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P384.rho H2OT2.5P384.eng H2OT2.5P384.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT2.5P448.rho H2OT2.5P448.eng H2OT2.5P448.esq 0.1 2
+# R = 0.3 [0.1, 0.15, 0.2, 0.2, 0.2, 0.2]
+# R = 0.35 [0.1, 0.15, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1]
+
+####### T = 3.5
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P8.rho H2OT3.5P8.eng H2OT3.5P8.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P16.rho H2OT3.5P16.eng H2OT3.5P16.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P32.rho H2OT3.5P32.eng H2OT3.5P32.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P48.rho H2OT3.5P48.eng H2OT3.5P48.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P64.rho H2OT3.5P64.eng H2OT3.5P64.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P96.rho H2OT3.5P96.eng H2OT3.5P96.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P128.rho H2OT3.5P128.eng H2OT3.5P128.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P160.rho H2OT3.5P160.eng H2OT3.5P160.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P256.rho H2OT3.5P256.eng H2OT3.5P256.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT3.5P384.rho H2OT3.5P384.eng H2OT3.5P384.esq 0.1 2
+# R = 0.3 [0.1, 0.15, 0.2, 0.2, 0.15]
+# R = 0.35 []
+
+###### T = 4.2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P8.rho H2OT4.2P8.eng H2OT4.2P8.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P16.rho H2OT4.2P16.eng H2OT4.2P16.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P32.rho H2OT4.2P32.eng H2OT4.2P32.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P48.rho H2OT4.2P48.eng H2OT4.2P48.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P64.rho H2OT4.2P64.eng H2OT4.2P64.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P96.rho H2OT4.2P96.eng H2OT4.2P96.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P128.rho H2OT4.2P128.eng H2OT4.2P128.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P160.rho H2OT4.2P160.eng H2OT4.2P160.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT4.2P256.rho H2OT4.2P256.eng H2OT4.2P256.esq 0.1 2
+# R = 0.3 [0.15, 0.15, 0.2, 0.2, 0.15]
+# R = 0.35 []
+
+####### T = 15.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P4.rho H2OT15.0P4.eng H2OT15.0P4.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P8.rho H2OT15.0P8.eng H2OT15.0P8.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P12.rho H2OT15.0P12.eng H2OT15.0P12.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P16.rho H2OT15.0P16.eng H2OT15.0P16.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P20.rho H2OT15.0P20.eng H2OT15.0P20.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P32.rho H2OT15.0P32.eng H2OT15.0P32.esq 0.1 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT15.0P40.rho H2OT15.0P40.eng H2OT15.0P40.esq 0.1 10
+# R = 0.25 [0.1, 0.06, 0.06, 0.06, 0.06]
+# R = 0.3 [0.15, ]
+# R =0.35 [0.2, 0.15, 0.15, 0.15, 0.15, 0.1, 0.1]
+
+######## T = 30.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P4.rho H2OT30.0P4.eng H2OT30.0P4.esq 0.2 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P6.rho H2OT30.0P6.eng H2OT30.0P6.esq 0.2 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P8.rho H2OT30.0P8.eng H2OT30.0P8.esq 0.2 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P10.rho H2OT30.0P10.eng H2OT30.0P10.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P16.rho H2OT30.0P16.eng H2OT30.0P16.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P24.rho H2OT30.0P24.eng H2OT30.0P24.esq 0.1 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT30.0P32.rho H2OT30.0P32.eng H2OT30.0P32.esq 0.1 10
+# R = 0.25 [0.1, 0.1, 0.1, ]
+# R = 0.35 [0.2, 0.2, 0.2, 0.15, 0.15, 0.1, 0.1]
+
+######## T = 50.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT50.0P4.rho H2OT50.0P4.eng H2OT50.0P4.esq 0.2 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT50.0P6.rho H2OT50.0P6.eng H2OT50.0P6.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT50.0P8.rho H2OT50.0P8.eng H2OT50.0P8.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT50.0P10.rho H2OT50.0P10.eng H2OT50.0P10.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT50.0P16.rho H2OT50.0P16.eng H2OT50.0P16.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT50.0P20.rho H2OT50.0P20.eng H2OT50.0P20.esq 0.1 2
+# R = 0.25 [0.1, 0.1, 0.1, ]
+# R = 0.35 [0.2, 0.2, 0.2, 0.15, 0.15, 0.1, 0.1]
+
+
+######## T = 70.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P2.rho H2OT70.0P2.eng H2OT70.0P2.esq 0.2 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P4.rho H2OT70.0P4.eng H2OT70.0P4.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P6.rho H2OT70.0P6.eng H2OT70.0P6.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P8.rho H2OT70.0P8.eng H2OT70.0P8.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P10.rho H2OT70.0P10.eng H2OT70.0P10.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P12.rho H2OT70.0P12.eng H2OT70.0P12.esq 0.1 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P16.rho H2OT70.0P16.eng H2OT70.0P16.esq 0.1 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT70.0P20.rho H2OT70.0P20.eng H2OT70.0P20.esq 0.1 10
+# R = 0.25
+# R = 0.35 [0.2, 0.15, 0.15, 0.15, 0.15, 0.1, 0.1, 0.1]
+
+######## T = 90.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P2.rho H2OT90.0P2.eng H2OT90.0P2.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P4.rho H2OT90.0P4.eng H2OT90.0P4.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P6.rho H2OT90.0P6.eng H2OT90.0P6.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P8.rho H2OT90.0P8.eng H2OT90.0P8.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P10.rho H2OT90.0P10.eng H2OT90.0P10.esq 0.15 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P12.rho H2OT90.0P12.eng H2OT90.0P12.esq 0.1 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P16.rho H2OT90.0P16.eng H2OT90.0P16.esq 0.1 10
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT90.0P20.rho H2OT90.0P20.eng H2OT90.0P20.esq 0.1 10
+# R = 0.35 [0.15, 0.15, 0.15, 0.15, 0.15, 0.1, 0.1, 0.1]
+
+######## T = 110.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT110.0P2.rho H2OT110.0P2.eng H2OT110.0P2.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT110.0P3.rho H2OT110.0P3.eng H2OT110.0P3.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT110.0P4.rho H2OT110.0P4.eng H2OT110.0P4.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT110.0P6.rho H2OT110.0P6.eng H2OT110.0P6.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT110.0P8.rho H2OT110.0P8.eng H2OT110.0P8.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT110.0P.rho H2OT110.0P.eng H2OT110.0P.esq 0.1 2
+
+######## T = 130.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT130.0P2.rho H2OT130.0P2.eng H2OT130.0P2.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT130.0P3.rho H2OT130.0P3.eng H2OT130.0P3.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT130.0P4.rho H2OT130.0P4.eng H2OT130.0P4.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT130.0P5.rho H2OT130.0P5.eng H2OT130.0P5.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT130.0P6.rho H2OT130.0P6.eng H2OT130.0P6.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT130.0P8.rho H2OT130.0P8.eng H2OT130.0P8.esq 0.06 2
+
+
+######## T = 150.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT150.0P2.rho H2OT150.0P2.eng H2OT150.0P2.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT150.0P3.rho H2OT150.0P3.eng H2OT150.0P3.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT150.0P4.rho H2OT150.0P4.eng H2OT150.0P4.esq 0.06 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT150.0P5.rho H2OT150.0P5.eng H2OT150.0P5.esq 0.06 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT150.0P6.rho H2OT150.0P6.eng H2OT150.0P6.esq 0.02 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT150.0P7.rho H2OT150.0P7.eng H2OT150.0P7.esq 0.02 2
+# R = 0.35 [0.15, 0.15, 0.1, 0.1, 0.06, 0.06]
+
+######## T = 170.0
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT170.0P2.rho H2OT170.0P2.eng H2OT170.0P2.esq 0.15 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT170.0P3.rho H2OT170.0P3.eng H2OT170.0P3.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT170.0P4.rho H2OT170.0P4.eng H2OT170.0P4.esq 0.1 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT170.0P5.rho H2OT170.0P5.eng H2OT170.0P5.esq 0.06 2
+"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT170.0P6.rho H2OT170.0P6.eng H2OT170.0P6.esq 0.06 2
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT170.0P7.rho H2OT170.0P7.eng H2OT170.0P7.esq 0.06 2
+
+######## T = 273.15
+#"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT273.15P2.rho H2OT273.15P2.eng H2OT273.15P2.esq 0.1 2
+
