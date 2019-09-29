@@ -1,0 +1,13 @@
+#!/bin/zsh
+#SBATCH --job-name=2H2O-P6-T170.0-R0.3-local-rot-r-tip4p-0.06
+#SBATCH --output=/work/x3lou/MMTK/H2OSimulations/LocalOE/q-TIP4P/N2-R0.3/%x-test.out
+#SBATCH --error=/work/x3lou/MMTK/H2OSimulations/LocalOE/q-TIP4P/N2-R0.3/%x-test.err
+#SBATCH --time=40-00:00
+#SBATCH --mem-per-cpu=3000mb
+
+cd "$PBS_O_WORKDIR"
+
+##python_path              running_script   density_matri    rot_energy   energy_square max_step N
+####### T = 1.5
+"$HOME/.mmtk/bin/python" $* test-h2o-local.py H2OT1.5P8.rho H2OT1.5P8.eng H2OT1.5P8.esq 0.08 2
+
