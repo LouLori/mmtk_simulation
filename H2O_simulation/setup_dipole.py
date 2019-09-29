@@ -8,7 +8,7 @@ from distutils.core import setup, Extension
 import os, sys
 
 compile_args = []
-prefix_user='/home/l2mcgrat/MMTK/'
+prefix_user='$HOME/MMTK/'
 include_dirs= [prefix_user+'include/python2.7/',prefix_user+'downloads/path_integrals/Include/',prefix_user+'include']
 libraries=['gfortran']
 library_dirs=['.']
