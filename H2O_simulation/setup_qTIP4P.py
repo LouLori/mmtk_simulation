@@ -14,7 +14,7 @@ except:
   print 'dont need to delete'
 
 compile_args = []
-include_dirs = ['/home/mdgschmi/mmtk_with_pi2_pigs_for_student_new/Include']
+include_dirs = ['$HOME/mmtk_with_pi2/Include']
 #include_dirs = ['$HOME/.mmtk/src/path_integrals/Include','.']
 
 from Scientific import N
