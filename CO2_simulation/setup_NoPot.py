@@ -9,7 +9,7 @@ import os, sys
 
 compile_args = []
 #include_dirs = ['/home/mdgschmi/mmtk_with_pi2_pigs_for_student_new/Include','.']
-include_dirs = ['/home/mdgschmi/khinsen-mmtk-ae5b00d24d94/Include','.']
+include_dirs = ['$HOME/.mmtk/Include','.']
 libraries=['gfortran']
 library_dirs=['.']
 from Scientific import N
